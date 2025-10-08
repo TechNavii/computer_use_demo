@@ -24,12 +24,8 @@ This project automates a Playwright browser while using Gemini's Computer Use AP
 
 Execute the agent script:
 ```bash
-uv run computer_use_agent.py
+python computer_use_agent.py
 ```
 
 By default the script launches Chromium in headed mode to show the agent acting on the page. Set `headless=True` in the script if you prefer headless automation.
 
-## Repository Hygiene
-
-- Sensitive environment values stay out of version control thanks to `.gitignore` and `.env.example`.
-- Dependencies are tracked both in `requirements.txt` for quick installs and `computer/pyproject.toml` for packaging the `computer` module.
